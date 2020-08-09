@@ -10,9 +10,19 @@ function Deck() {
 		}
 	}
 	
+	function shuffle() {
+		let getRandomInt = function(max) {
+			return Math.floor(Math.random() * Math.floor(max));
+		}
 
-	let shuffle = function() {
-		
+		let swap = function(array, i, j) {
+			let temp = array[i];
+			array[i] = array[j];
+			array[j] = temp;
+		}
+
+		for (let i = 0; i < array.length; i++) {
+			swap(this.deck, i, getRandomInt(52));
+		}
 	}
-
 }
