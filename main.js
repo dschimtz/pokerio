@@ -1,1 +1,1 @@
-console.log("test");
+var deck = new Deck();
